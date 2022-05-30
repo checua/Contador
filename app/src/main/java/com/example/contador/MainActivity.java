@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static int conta = 1;
+    int conta = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                conta = Integer.parseInt ( contador.getText ().toString ()) + 1;
+                conta++;
 
-                contador.setText ( String.valueOf(conta));
+                contador.setText (conta + "");
             }
         } );
     }
