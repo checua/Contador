@@ -22,16 +22,21 @@ public class MainActivity extends AppCompatActivity {
         Button btnContador = findViewById ( R.id.button);
         TextView contador = findViewById ( R.id.textView );
 
+        Button btnFrases = findViewById ( R.id.btnFrases);
 
-        btnContador.setOnClickListener ( new View.OnClickListener ( ) {
-            @Override
-            public void onClick(View v) {
+        btnContador.setOnClickListener ( v -> {
 
-                conta++;
+            conta++;
 
-                contador.setText (conta + "");
-            }
+            contador.setText (conta + "");
         } );
+
+        btnFrases.setOnClickListener ( v -> {
+            Intent intent = new Intent ( this, ActivityFrases.class );
+            startActivity(intent);
+        } );
+
+
     }
 
 
