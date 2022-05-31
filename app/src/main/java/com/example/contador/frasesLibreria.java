@@ -11,6 +11,7 @@ public class frasesLibreria {
         Random randomContador = new Random (  );
         int randomNumber = randomContador.nextInt (frases.length);
         return frases[randomNumber];
+
     }
 
 
