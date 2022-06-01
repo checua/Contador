@@ -14,5 +14,6 @@ public class coloresLibreria {
         int randomNumber = randomContador.nextInt (colores.length);
         int color = Color.parseColor ( colores[randomNumber]);
         return color;
+
     }
 }
